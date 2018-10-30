@@ -8,9 +8,17 @@
 #include <iostream>
 #include <cstdlib>
 
-int addSong(Song const &s){}
-int removeSong(Song const &s){}
+using namespace std;
+
+int addSong(Song const &s){
+    return 0;
+}
+int removeSong(Song const &s){
+    return 0;
+}
 void shuffle(){}
 void showSongList(){}
 void sortSongList(){}
-int getRemainingMemory(){}
+int getRemainingMemory(){
+    return 0;
+}

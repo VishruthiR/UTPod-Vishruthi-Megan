@@ -4,5 +4,6 @@ project(UTPod-Vishruthi-Megan)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(UTPOD driver.cpp
+                     UTPOD.h
                      UTPOD.cpp
                      Song.cpp)

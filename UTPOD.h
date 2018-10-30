@@ -1,6 +1,10 @@
 #include "Song.h"
-
 //UtPod class declaration
+#ifndef  _UTPOD_H
+#define  _UTPOD_H
+
+using namespace std;
+
 class UtPod
 {
 private:
@@ -20,23 +24,30 @@ private:
     int memSize;
 
 public:
-    UtPod();
-    UtPod(int size);
+    UtPod(){}
+    UtPod(int size){}
 
-    int addSong(Song const &s);
-    int removeSong(Song const &s);
-    void shuffle();
-    void showSongList();
-    void sortSongList();
+    int addSong(Song const &s){
+        return 0;
+    }
+    int removeSong(Song const &s){
+        return 0;
+    }
+    void shuffle(){}
+    void showSongList(){}
+    void sortSongList(){}
 
     int getTotalMemory() {
         return memSize;
+    };
+
+    int getRemainingMemory(){
+        return 0;
     }
 
-    int getRemainingMemory();
-
-    ~UtPod();
+    ~UtPod(){}
 
 };
 
 
+#endif

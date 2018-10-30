@@ -8,6 +8,8 @@
 #include <iostream>
 #include <cstdlib>
 
+using namespace std;
+
 Song::Song(string _title, string _artist, int _size){
     title = _title;
     artist = _artist;

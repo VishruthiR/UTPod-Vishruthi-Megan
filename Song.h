@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <string>
 
+
 using namespace std;
 
 
@@ -19,7 +20,6 @@ class Song{
 
     public:
         Song(string title, string artist, int size);
-
         string getTitle() const;
         string getArtist() const;
         int getSize()const;
