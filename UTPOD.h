@@ -1,10 +1,6 @@
 #include "Song.h"
+
 //UtPod class declaration
-#ifndef  _UTPOD_H
-#define  _UTPOD_H
-
-using namespace std;
-
 class UtPod
 {
 private:
@@ -24,30 +20,133 @@ private:
     int memSize;
 
 public:
-    UtPod(){}
-    UtPod(int size){}
+    //Default constructor
+    //set the memory size to MAX_MEMORY
+    UtPod();
 
-    int addSong(Song const &s){
-        return 0;
-    }
-    int removeSong(Song const &s){
-        return 0;
-    }
-    void shuffle(){}
-    void showSongList(){}
-    void sortSongList(){}
+
+
+    //Constructor with size parameter
+    //The user of the class will pass in a size.
+    //If the size is greater than MAX_MEMORY or less than or equal to 0,
+    //set the size to MAX_MEMORY.
+    UtPod(int size);
+
+    /* FUNCTION - int addSong
+     * attempts to add a new song to the UtPod
+         o returns a 0 if successful
+         o returns -1 if not enough memory to add the song
+
+     precondition: s is a valid Song
+
+     input parms -
+
+     output parms -
+    */
+
+    int addSong(Song const &s);
+
+
+    /* FUNCTION - int removeSong
+     * attempts to remove a song from the UtPod
+     * removes the first instance of a song that is in the the UtPod multiple times
+         o returns 0 if successful
+         o returns -1 if nothing is removed
+
+
+       input parms -
+
+       output parms -
+    */
+
+    int removeSong(Song const &s);
+
+
+    /* FUNCTION - void shuffle
+     *  shuffles the songs into random order
+        o will do nothing if there are less than two songs in the current list
+
+       input parms -
+
+       output parms -
+    */
+
+    void shuffle();
+
+    /* FUNCTION - void swap
+        *  Swap song nodes
+
+          input parms - nodes to be swapped
+
+          output parms -
+       */
+    void swap(SongNode &s1, SongNode &s2);
+
+    /* FUNCTION - void showSongList
+     * prints the current list of songs in order from first to last to standard output
+     * format - Title, Artist, size in MB (one song per line)
+
+       input parms -
+
+       output parms -
+    */
+
+
+
+
+    void showSongList();
+
+
+    /* FUNCTION - void sortSongList
+     *  sorts the songs in ascending order
+        o will do nothing if there are less than two songs in the current list
+
+       input parms -
+
+       output parms -
+    */
+
+    void sortSongList();
+
+
+    /* FUNCTION - void clearMemory
+     * clears all the songs from memory
+
+       input parms -
+
+       output parms -
+    */
+    void clearMemory();
+
+
+    /* FUNCTION - int getTotalMemory
+     *  returns the total amount of memory in the UtPod
+        o will do nothing if there are less than two songs in the current list
+
+       input parms -
+
+       output parms -
+    */
 
     int getTotalMemory() {
         return memSize;
-    };
-
-    int getRemainingMemory(){
-        return 0;
     }
 
-    ~UtPod(){}
+
+
+    /* FUNCTION - int getRemainingMemory
+     *  returns the amount of memory available for adding new songs
+
+       input parms -
+
+       output parms -
+    */
+
+    int getRemainingMemory();
+
+
+    ~UtPod();
 
 };
 
 
-#endif

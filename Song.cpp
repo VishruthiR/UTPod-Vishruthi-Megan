@@ -8,10 +8,8 @@
 #include <iostream>
 #include <cstdlib>
 
-using namespace std;
-
-Song::Song(string _title, string _artist, int _size){
-    title = _title;
+Song::Song(string title, string _artist, int _size){
+    this->title = title;
     artist = _artist;
     size = _size;
 }
@@ -23,6 +21,9 @@ string Song::getTitle() const{
 string Song::getArtist() const{
     return artist;
 }
+
 int Song::getSize() const{
+
     return size;
+
 }
