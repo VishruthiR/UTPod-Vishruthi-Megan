@@ -3,7 +3,6 @@
 //
 #include <cstdlib>
 #include <string>
-#include "UTPOD.h"
 
 
 using namespace std;
@@ -19,9 +18,9 @@ class Song{
         static const int MAX_SIZE =  512;
 
     public:
+        Song();
         Song(string title, string artist, int size);
         string getTitle() const;
         string getArtist() const;
         int getSize()const;
-        int numSongs = 0;
 };

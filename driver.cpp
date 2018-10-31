@@ -4,7 +4,6 @@
 
 #include <cstdlib>
 #include <iostream>
-//#include "Song.h"
 #include "UTPOD.h"
 
 using namespace std;
@@ -12,9 +11,7 @@ using namespace std;
 int main(int argc, char *argv[]){
     UtPod t;
     int size = t.getRemainingMemory();
-    cout << size;
-    
-    UtPod t;
+    cout << "Remaining Memory: " << size << endl << "Total Memory: " << t.getTotalMemory() << endl;
 
     Song s1("Beatles", "Hey Jude1", 4);
     int result = t.addSong(s1);
@@ -67,6 +64,9 @@ int main(int argc, char *argv[]){
 
     t.showSongList();
     cout << "memory = " << t.getRemainingMemory() << endl;
+
+    t.shuffle();
+    t.showSongList();
 
 
 }

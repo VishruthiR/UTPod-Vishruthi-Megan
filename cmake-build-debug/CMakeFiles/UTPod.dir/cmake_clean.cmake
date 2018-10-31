@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/UTPOD.dir/driver.cpp.obj"
-  "CMakeFiles/UTPOD.dir/Song.cpp.obj"
-  "CMakeFiles/UTPOD.dir/UTPOD.cpp.obj"
+  "CMakeFiles/UTPOD.dir/driver.cpp.o"
+  "CMakeFiles/UTPOD.dir/Song.cpp.o"
+  "CMakeFiles/UTPOD.dir/UTPOD.cpp.o"
   "UTPOD.pdb"
-  "UTPOD.exe"
-  "UTPOD.exe.manifest"
-  "libUTPOD.dll.a"
+  "UTPOD"
 )
 
 # Per-language clean rules from dependency scanning.
