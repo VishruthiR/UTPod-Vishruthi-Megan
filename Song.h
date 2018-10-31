@@ -23,4 +23,6 @@ class Song{
         string getTitle() const;
         string getArtist() const;
         int getSize()const;
+
+    bool operator > (Song const &rhs);
 };

@@ -12,25 +12,9 @@ cstdlib
 string
 -
 
-/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/UTPOD.cpp
-UTPOD.h
-/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/UTPOD.h
-string
--
-fstream
--
-iostream
--
-cstdlib
--
-
 /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/UTPOD.h
 Song.h
 /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/Song.h
-cstdlib
--
-iostream
--
 
 /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/driver.cpp
 cstdlib

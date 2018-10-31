@@ -39,6 +39,18 @@ int main(int argc, char *argv[]){
 
     t.showSongList();
 
+    cout<<endl<<endl;
+
+    t.shuffle();
+    t.showSongList();
+
+    cout<<endl<<endl;
+
+    t.sortSongList();
+    t.showSongList();
+
+    cout<<endl<<endl;
+
     result = t.removeSong(s2);
     cout << "delete result = " << result << endl;
 
@@ -68,5 +80,10 @@ int main(int argc, char *argv[]){
     t.shuffle();
     t.showSongList();
 
+    t.~UtPod();
+
+    cout<<"---------------------------";
+
+    t.showSongList();
 
 }
