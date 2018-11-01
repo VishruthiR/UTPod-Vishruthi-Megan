@@ -1,5 +1,5 @@
 //
-// Created by Vishruthi Ramaswamy on 10/31/18.
+// Created by Vishruthi Ramaswamy and Megan Nguyen
 //
 
 #ifndef UTPOD_VISHRUTHI_MEGAN_UTPOD_H
@@ -27,7 +27,7 @@ private:
     int memSize;
     int totalmem;
 
-    //--------------HELPER FUNCTION--------------------------------------
+    //--------------HELPER FUNCTIONS--------------------------------------
     int numSongs(SongNode *s);
 
 public:

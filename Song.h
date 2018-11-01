@@ -1,5 +1,5 @@
 //
-// Created by Vishruthi Ramaswamy on 10/25/18.
+// Created by Vishruthi Ramaswamy and Megan Nguyen
 //
 #include <cstdlib>
 #include <string>
@@ -19,10 +19,12 @@ class Song{
 
     public:
         Song();
-        Song(string title, string artist, int size);
+        Song(string artist, string title, int size);
         string getTitle() const;
         string getArtist() const;
         int getSize()const;
 
     bool operator > (Song const &rhs);
+    bool operator < (Song const &rhs);
+
 };

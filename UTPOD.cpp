@@ -9,6 +9,7 @@
 
 UtPod::UtPod()
 {
+    songs = NULL;
     memSize = MAX_MEMORY;
     totalmem = MAX_MEMORY;
 };
@@ -16,6 +17,7 @@ UtPod::UtPod()
 
 UtPod::UtPod(int size)
 {
+    songs = NULL;
     if(size <= 0 || size > MAX_MEMORY)
     {
         memSize = MAX_MEMORY;
@@ -38,6 +40,7 @@ int UtPod::addSong(Song const &s)
             newNode->s = s;
             newNode->next = NULL;
             songs = newNode;
+            memSize -= s.getSize();
             return SUCCESS;
         }
         else    // add new song node to top of linked list, subtract song's size from remaining memory
@@ -58,9 +61,9 @@ int UtPod::addSong(Song const &s)
 
 int UtPod::removeSong(Song const &s)
 {
-    SongNode* temp = songs;
-    SongNode* trail = songs;
-    SongNode* deleteNode;
+    SongNode *temp = songs;
+    SongNode *trail = songs;
+
     while(temp)
     {
         //traverse linked list to find song node to delete
@@ -70,6 +73,7 @@ int UtPod::removeSong(Song const &s)
                 songs = temp->next;
             }
             trail->next = temp->next;      //remove node from linked list
+            memSize += temp->s.getSize();
             delete temp;
             return SUCCESS;
         }
@@ -89,6 +93,17 @@ void UtPod::shuffle()
     if(numOfSongs <= 1)
     {
         return;
+    }
+
+    else if(numOfSongs==2)
+    {
+        SongNode *ptr1 = songs;
+        SongNode *ptr2 = songs->next;
+
+        Song holdval = ptr1->s;                                      //swap nodes
+        ptr1->s = ptr2->s;
+        ptr2->s = holdval;
+
     }
 
     else
@@ -140,14 +155,15 @@ void UtPod::shuffle()
 
 }
 
-void UtPod::showSongList(){
+void UtPod::showSongList()
+{
     SongNode* temp = songs;
     while(temp)
     {
         cout << temp->s.getTitle() << ", " << temp->s.getArtist() << ", " << temp->s.getSize() << " MB" << endl;
         temp = temp->next;
     }
-}
+ }
 
 void UtPod::sortSongList()
 {
@@ -182,6 +198,7 @@ void UtPod::clearMemory()
         temp = list;                    //set current node to next node
     }
     songs = NULL;
+    memSize = totalmem;
 }
 
 
@@ -198,5 +215,6 @@ int UtPod::numSongs(UtPod::SongNode *s)
 
 UtPod::~UtPod()
 {
-   clearMemory();
+   this->clearMemory();
+   memSize = totalmem;
 }

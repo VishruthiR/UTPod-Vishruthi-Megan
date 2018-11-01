@@ -1,5 +1,5 @@
 //
-// Created by Vishruthi Ramaswamy on 10/25/18.
+// Created by Vishruthi Ramaswamy and Megan Nguyen
 //
 
 #include "Song.h"
@@ -13,28 +13,33 @@ Song::Song()
 {
     title = "";
     artist = "";
-    size = 0;
+    size = 512;
 }
 
-Song::Song(string _title, string _artist, int _size){
-    title = _title;
+Song::Song(string _artist, string _title, int _size)
+{
     artist = _artist;
+    title = _title;
     size = _size;
 }
 
-string Song::getTitle() const{
+string Song::getTitle() const
+{
     return title;
 }
 
-string Song::getArtist() const{
+string Song::getArtist() const
+{
     return artist;
 }
 
-int Song::getSize() const{
+int Song::getSize() const
+{
     return size;
 }
 
-bool Song:: operator > (Song const &rhs) {
+bool Song:: operator > (Song const &rhs)
+{
     if(this->artist > rhs.artist){
         return true;
     }
@@ -44,6 +49,32 @@ bool Song:: operator > (Song const &rhs) {
         }
         else if(this->title == rhs.title){
             if(this->size > rhs.size){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+    else{
+        return false;
+    }
+}
+
+bool Song:: operator < (Song const &rhs)
+{
+    if(this->artist < rhs.artist){
+        return true;
+    }
+    else if(this->artist == rhs.artist){
+        if(this->title < rhs.title){
+            return true;
+        }
+        else if(this->title == rhs.title){
+            if(this->size < rhs.size){
                 return true;
             }
             else{
