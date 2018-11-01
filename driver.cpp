@@ -1,5 +1,5 @@
 //
-// Created by Vishruthi Ramaswamy on 10/25/18.
+// Created by Vishruthi Ramaswamy and Megan Nguyen
 //
 
 #include <cstdlib>
@@ -8,84 +8,105 @@
 
 using namespace std;
 
-int main(int argc, char *argv[]){
+/*void SuccessofAdd(int result, UtPod t);
+void SuccessofDelete(int result, UtPod t);*/
+
+int main(int argc, char *argv[]) {
     UtPod t;
+    int result = 0;
 
-    //   cout << "Remaining Memory: " << t.getRemainingMemory() << endl << "Total Memory: " << t.getTotalMemory() << endl;
+    cout << "Total Memory: " << t.getTotalMemory() << endl << "Remaining Memory: " << t.getRemainingMemory() << endl;
 
-    Song s1("Beatles", "Hey Jude1", 4);
+    Song s1("Artist 2", "Song 1", 300);
+    result = t.addSong(s1);
+    if (result == 0)
+        cout << "Successfully added Song 1" << endl;
+    else
+        cout << "Failed to add Song 1" << endl;
 
-    int result = t.addSong(s1);
-
-    cout << "result = " << result << endl << "Remaining Memory: " << t.getRemainingMemory() << endl << "Total Memory: " << t.getTotalMemory() << endl;
-
-    t.showSongList();
-    t.showSongList();
-    Song s2("Beatles", "Hey Jude2", 5);
+    Song s2("Artist1", "Song 2", 35);
     result = t.addSong(s2);
-    cout << "result = " << result << endl;
+    if (result == 0)
+        cout << "Successfully added Song 2" << endl;
+    else
+        cout << "Failed to add Song 2" << endl;
 
-    t.showSongList();
 
-    Song s3("Beatles", "Hey Jude3", 6);
+    Song s3("Artist1", "Song 2", 35);
     result = t.addSong(s3);
-    cout << "result = " << result << endl;
+    if (result == 0)
+        cout << "Successfully added Song 2" << endl;
+    else
+        cout << "Failed to add Song 2" << endl;
 
-    Song s4("Beatles", "Hey Jude4", 7);
+    Song s4("Artist4", "Song 4", 500);
     result = t.addSong(s4);
-    cout << "result = " << result << endl;
+    if (result == 0)
+        cout << "Successfully added Song 4" << endl;
+    else
+        cout << "Failed to add Song 4" << endl;
 
-    Song s5("Beatles", "Hey Jude5", 241);
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
+    cout << "Total Memory: " << t.getTotalMemory() << endl << "Remaining Memory: " << t.getRemainingMemory() << endl;
 
     t.showSongList();
 
-    cout<<endl<<endl;
+//
+//    Song s5("Artist6", "Song 3", 241);
+//    result = t.addSong(s5);
+//
+//    Song s6("Artist8", "Song 12", 241);
+//    result = t.addSong(s6);
+//
+//    Song s7("Artist8", "Song 12", 7);
+//    result = t.addSong(s7);
+//
+//    Song s8("Artist12", "Song 2", 38);
+//    result = t.addSong(s8);
 
+    cout << endl << "SHUFFLE" << endl;
     t.shuffle();
     t.showSongList();
 
-    cout<<endl<<endl;
-
+    cout << endl << "SORT" << endl;
     t.sortSongList();
     t.showSongList();
 
-    cout<<endl<<endl;
-
-    result = t.removeSong(s2);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s3);
-    cout << "delete result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s5);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s4);
-    cout << "delete result = " << result << endl;
-
-
-    t.showSongList();
-
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-    cout << "memory = " << t.getRemainingMemory() << endl;
-
+    cout << endl << "SHUFFLE" << endl;
     t.shuffle();
     t.showSongList();
 
-    t.~UtPod();
-
-    cout<<"---------------------------";
-
+    cout << endl << "SORT" << endl;
+    t.sortSongList();
     t.showSongList();
+
+    result = t.removeSong(s2);
+    if (result == 0)
+        cout << "Successfully deleted Song 2" << endl;
+    else
+        cout << "Failed to add Song 2" << endl;
+    cout << "Total Memory: " << t.getTotalMemory() << endl << "Remaining Memory: " << t.getRemainingMemory() << endl;
+
+
+    cout << endl << "SHUFFLE" << endl;
+    t.shuffle();
+    t.showSongList();
+
+    t.clearMemory();
+
+    cout << "SHOW SHUFFLED EMPTY LIST" << endl;
+    t.shuffle();
+    t.showSongList();
+
+    cout << "SHOW SORTED EMPTY LIST" << endl;
+    t.sortSongList();
+    t.showSongList();
+
+    t.addSong(s2);
+    if (result == 0)
+        cout << "Successfully added Song 4" << endl;
+    else
+        cout << "Failed to add Song 4" << endl;
+    t.showSongList();
+    cout << "Total Memory: " << t.getTotalMemory() << endl << "Remaining Memory: " << t.getRemainingMemory() << endl;
 
 }

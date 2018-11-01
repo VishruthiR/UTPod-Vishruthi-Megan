@@ -120,9 +120,7 @@ void UtPod::shuffle()
 
         for (int i = 0; i < randNum; i++)
         {
-            srand(currentTime);
             int num1 = rand() % numOfSongs;                   //index of first song to swap
-            srand(currentTime+11);
             int num2 = rand() % numOfSongs;                   //index of second song to swap
 
             while (num1 == num2) {                            //if same song selected generate new song selection
@@ -167,6 +165,11 @@ void UtPod::showSongList()
 
 void UtPod::sortSongList()
 {
+    if(numSongs(songs)<=1)
+    {
+        return;
+    }
+
     SongNode *pt1 = songs;
     SongNode *pt2 = songs->next;
 
@@ -204,8 +207,8 @@ void UtPod::clearMemory()
 
 int UtPod::numSongs(UtPod::SongNode *s)
 {
-    int count = 1;
-    while(s->next)
+    int count = 0;
+    while(s)
     {
         count++;
         s = s->next;
