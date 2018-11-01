@@ -12,17 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b394a477-f678-4ec1-9a42-0abe450213b2" name="Default Changelist" comment="Fixed updating memory size bugs, constructor signature, and clear mem">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Song.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Song.h" beforeDir="false" afterPath="$PROJECT_DIR$/Song.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTPOD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/UTPOD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTPOD.h" beforeDir="false" afterPath="$PROJECT_DIR$/UTPOD.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/Song.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/Song.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/UTPOD.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/UTPOD.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/driver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/driver.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPod.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPod.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/UTPOD.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/UTPOD.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/UTPOD.dir/driver.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/driver.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -124,27 +115,27 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="1" />
-          <entry key="cpp" value="2194" />
+          <entry key="cpp" value="3219" />
           <entry key="h" value="384" />
-          <entry key="txt" value="200" />
+          <entry key="txt" value="467" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="4" />
-          <entry key="ObjectiveC" value="2579" />
-          <entry key="PLAIN_TEXT" value="196" />
+          <entry key="ObjectiveC" value="3604" />
+          <entry key="PLAIN_TEXT" value="463" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="UTPOD (disassembly)" value="6" />
+          <entry key="UTPOD (disassembly)" value="13" />
           <entry key="c" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Disassembly" value="6" />
+          <entry key="Disassembly" value="13" />
           <entry key="ObjectiveC" value="2" />
         </counts>
       </usages-collector>
@@ -168,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UTPOD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="391">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="e#53#72#0" expanded="true" />
               </folding>
@@ -183,17 +174,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UTPOD.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="74" lean-forward="true" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+            <state relative-caret-position="1416">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/driver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+            <state relative-caret-position="196">
+              <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
               <folding>
                 <element signature="e#54#72#0" expanded="true" />
               </folding>
@@ -204,8 +195,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Song.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#54#71#0" expanded="true" />
               </folding>
@@ -216,7 +207,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Song.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="340">
               <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="e#53#71#0" expanded="true" />
@@ -236,8 +227,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>memsize</find>
       <find>clear</find>
+      <find>SuccessofDelete(result, t);</find>
+      <find>memsize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,8 +245,8 @@
         <option value="$PROJECT_DIR$/Song.h" />
         <option value="$PROJECT_DIR$/Song.cpp" />
         <option value="$PROJECT_DIR$/UTPOD.h" />
-        <option value="$PROJECT_DIR$/driver.cpp" />
         <option value="$PROJECT_DIR$/UTPOD.cpp" />
+        <option value="$PROJECT_DIR$/driver.cpp" />
       </list>
     </option>
   </component>
@@ -264,6 +256,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1905" />
     <option name="width" value="1948" />
@@ -360,7 +353,7 @@
       <workItem from="1540930546509" duration="116000" />
       <workItem from="1540940772782" duration="5632000" />
       <workItem from="1540956346968" duration="15846000" />
-      <workItem from="1541036023093" duration="22607000" />
+      <workItem from="1541036023093" duration="30023000" />
     </task>
     <task id="LOCAL-00001" summary="Wrote comments, created clearMemory, moved numSongs to private">
       <created>1541058245366</created>
@@ -369,11 +362,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541058245366</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed calculating memory size (updated memsize in remove song), fixed constructor parameter order for song, and updated shuffle to only swap when there are only 2 songs bc our shuffle had test cases that didn't shuffle the two songs.">
+      <created>1541068750926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541068750926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59522000" />
+    <option name="totallyTimeSpent" value="66938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
@@ -431,15 +431,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Wrote comments, created clearMemory, moved numSongs to private" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote comments, created clearMemory, moved numSongs to private" />
+    <MESSAGE value="Fixed calculating memory size (updated memsize in remove song), fixed constructor parameter order for song, and updated shuffle to only swap when there are only 2 songs bc our shuffle had test cases that didn't shuffle the two songs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed calculating memory size (updated memsize in remove song), fixed constructor parameter order for song, and updated shuffle to only swap when there are only 2 songs bc our shuffle had test cases that didn't shuffle the two songs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/driver.cpp</url>
-          <line>11</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/UTPOD.cpp</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -509,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Song.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="340">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="e#53#71#0" expanded="true" />
@@ -517,39 +518,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UTPOD.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Song.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#54#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/driver.cpp">
+    <entry file="file://$PROJECT_DIR$/UTPOD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="391">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <element signature="e#54#72#0" expanded="true" />
+            <element signature="e#53#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UTPOD.h">
+    <entry file="file://$PROJECT_DIR$/driver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="74" lean-forward="true" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UTPOD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="196">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding>
-            <element signature="e#53#72#0" expanded="true" />
+            <element signature="e#54#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
