@@ -1,8 +1,8 @@
-# Install script for directory: /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan
+# Install script for directory: C:/EE312/CLionProjects/UTPod-Vishruthi-Megan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/UTPod-Vishruthi-Megan")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

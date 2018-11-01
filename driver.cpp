@@ -10,15 +10,17 @@ using namespace std;
 
 int main(int argc, char *argv[]){
     UtPod t;
-    int size = t.getRemainingMemory();
-    cout << "Remaining Memory: " << size << endl << "Total Memory: " << t.getTotalMemory() << endl;
+
+    //   cout << "Remaining Memory: " << t.getRemainingMemory() << endl << "Total Memory: " << t.getTotalMemory() << endl;
 
     Song s1("Beatles", "Hey Jude1", 4);
+
     int result = t.addSong(s1);
-    cout << "result = " << result << endl;
+
+    cout << "result = " << result << endl << "Remaining Memory: " << t.getRemainingMemory() << endl << "Total Memory: " << t.getTotalMemory() << endl;
 
     t.showSongList();
-
+    t.showSongList();
     Song s2("Beatles", "Hey Jude2", 5);
     result = t.addSong(s2);
     cout << "result = " << result << endl;

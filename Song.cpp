@@ -7,6 +7,7 @@
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 Song::Song()
 {

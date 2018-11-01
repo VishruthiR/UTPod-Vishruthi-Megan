@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan
+"C:\EE312\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\EE312\CLionProjects\UTPod-Vishruthi-Megan
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug
+-- Build files have been written to: C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug

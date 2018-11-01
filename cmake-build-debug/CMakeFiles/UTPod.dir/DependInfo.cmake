@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/Song.cpp" "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/Song.cpp.o"
-  "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/UTPOD.cpp" "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/UTPOD.cpp.o"
-  "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/driver.cpp" "/Users/vishruthi/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/driver.cpp.o"
+  "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/Song.cpp" "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/Song.cpp.obj"
+  "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/UTPOD.cpp" "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/UTPOD.cpp.obj"
+  "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/driver.cpp" "C:/EE312/CLionProjects/UTPod-Vishruthi-Megan/cmake-build-debug/CMakeFiles/UTPOD.dir/driver.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
